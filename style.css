@@ -1,0 +1,271 @@
+/*
+red:       #FF3148
+darkgreen: #00817B
+lightblue: #00CFC4
+llblue:    #00F5EE
+gray:      #717F7F
+herader    #063532
+*/
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&display=swap');
+*{
+    font-family: 'BIZ UDPMincho';
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FF3148;
+    color: #ffffff;
+    padding: 0px 100px;
+    border-top: solid #000000 3px;
+    position: fixed;
+    width: 100%;
+    height: 7%;
+    z-index: 999;
+}
+header a{
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 10px;
+    font-size: 17px;
+    transition: ease 1s;
+    -webkit-transition: ease 1s;
+    -moz-transition: ease 1s;
+    -ms-transition: ease 1s;
+    -o-transition: ease 1s;
+}
+header a:hover{
+    color:#00F5EE;
+    font-size: 22px;
+}
+.carsour{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    background-image: url(images/view.jpg); 
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, .4);
+    background-position: center;
+
+}
+
+.carsour div{
+    margin-left: 100px;
+    margin-top: 21% ;
+    line-height: 1.5;
+}
+
+.carsour span{
+    color: #FF3148;
+}
+.carsour a{
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #ffffff;
+    background-color: #FF3148;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: ease 1s;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-transition: ease 1s;
+    -moz-transition: ease 1s;
+    -ms-transition: ease 1s;
+    -o-transition: ease 1s;
+}
+.carsour a:hover {
+    background-color: #00817B;
+    font-size: 20px;
+}
+
+.services h2 {
+    text-align: center;
+    margin: 30px 0px    ;
+}
+.services .container {
+    display: flex;
+    justify-content: center;
+    padding: 0px 50px;
+    flex-wrap: wrap;
+}
+
+.services .card {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 6px 6px rgb(168, 168, 168);
+    padding: 10px;
+    width: 20em;
+    text-align: center;
+}
+.card h3{
+    color: #FF3148;
+    font-weight: 1000;
+    margin: 10px 0px;
+}
+.card p {
+    font-size: 16px;
+}
+.services .card >div { /* '>' first div*/
+    color: #000000;
+    font-size: 50px;
+}
+.portfolio {
+    background-color: #74000d;
+    text-align: center;
+    padding: 30px 100px;
+}
+.portfolio h2 {
+    color: white;
+    margin-bottom: 40px;
+    border-bottom: solid crimson;
+    display: inline-block;
+}
+.portfolio .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.portfolio .card {
+    background-color: white;
+    border: solid;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    width: 20em;
+    overflow: hidden;
+    min-height: 250px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.portfolio .card img {
+    height: 16em;
+    width: 100%;
+    object-fit: cover;
+}
+.portfolio button {
+    color: white;
+    background-color: #FF3148;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.portfolio .card-desc {
+    margin: 0px 10px;
+    /* display: flex;   // To put button right of paragraph
+    text-align: justify;
+    text-justify: inter-ideograph; */
+}
+.portfolio .card-desc p{
+    padding: 15px 0px;
+    line-height: 1.5;
+    font-weight: 700;
+}
+.portfolio .card-desc button { 
+    /* flex-shrink: 0;    To put button right of paragraph */
+    align-self: end;
+    margin-left: 10px;
+    font-weight: 900;
+
+}
+.notilla {
+    padding: 50px 100px;
+    display: flex;
+    align-items: center;
+}
+.notilla p {
+    margin-top: 50px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+.notilla h2 {
+    color: #FF3148;
+}
+.notilla-desc {
+    width: 60%;
+    text-align: center;
+}
+.notilla-img {
+    width: 40%;
+    margin-right: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px rgb(0 0 0 /40%);
+    overflow: hidden;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.img-rtl {
+    margin-left: 30px!important;
+    margin-right: 0px!important;
+}
+.about {
+    padding: 50px;
+    background-image: url(Images/4.jpg);
+    min-height: 80vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, .4);
+    text-align: center;
+}
+.about>div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+.about h2 {
+    color: white;
+    border-bottom: solid white;
+    display: inline-block;
+}
+.about img {
+    width: 20em;
+    height: 20em;
+    border: solid #ff3148;
+    margin-right: 30px;
+    margin-bottom: 30px
+    ;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    object-fit: cover;
+}
+footer {
+    text-align: center;
+    background-color: #ae1526;
+    color: white;
+    padding: 20px;
+}
+/*
+.test {background-color: #ccf; border: 5px solid #99f; display: none; line-height: 500px; width: 500px; margin: 15px auto; text-align: center;}
+.test:target {display: block;}
+
+#nav,
+#nav li {display: block; margin: 0; padding: 0; list-style: none; text-align: center;}
+#nav li {display: inline-block;}
+#nav li a {display: block; text-decoration: none; padding: 3px; margin: 5px; border: 1px solid #99f; border-radius: 5px;}
+#nav li a:focus,
+#nav li a:active {background-color: #ccf; color: #fff;} */
